@@ -1,0 +1,2536 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #131315;
+    color: white;
+}
+
+#cabezero2{
+    display: none;
+}
+#entradamediaquiri{
+    display: none;
+}
+
+/*circulo html*/
+.circulos{
+    border-radius: 50%;
+    background-color:white;
+    width: 15px;
+    height: 15px;
+    margin: 0em 0.3em ;
+    cursor: pointer;
+    
+}
+.active{
+    background-color: gray;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/*circulo java*/
+.circulosjava{
+    border-radius: 50%;
+    background-color:white;
+    width: 15px;
+    height: 15px;
+    margin: 0em 0.3em ;
+    cursor: pointer;
+    
+}
+.activejava{
+    background-color: gray;
+}
+.botonesjava{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*circulo mysql*/
+.circulosmysql{
+    border-radius: 50%;
+    background-color:white;
+    width: 15px;
+    height: 15px;
+    margin: 0em 0.3em ;
+    cursor: pointer;
+    
+}
+.activemysql{
+    background-color: gray;
+}
+.botonesmysql{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*circulo python*/
+.circulospython{
+    border-radius: 50%;
+    background-color:white;
+    width: 15px;
+    height: 15px;
+    margin: 0em 0.3em ;
+    cursor: pointer;
+    
+}
+.activepython{
+    background-color: gray;
+}
+.botonespython{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*cabezero*/
+.cabezero {
+    margin: 0 auto;
+}
+.cabezero h1{
+    text-align: left;
+    padding-bottom: 3em;
+    padding-top: 1em;
+    padding-left: 1em;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/*menu hamburgesa*/
+#menuhamburgesa{
+    float: right;
+   position: relative;
+   top: 3em;
+   padding-right: 1em;
+}
+.enlaces a{
+    text-decoration: none;
+}
+.enlaces p{
+    color: white;
+}
+.menuhamburgesa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+  
+.barra {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    margin: 3px 0;
+}
+  
+.barra.activo:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-100%); /* Animación hacia la izquierda */
+}
+  
+.barra.activo:nth-child(1) {
+    transform: rotate(45deg) translate(-6px, 6px); /* Ajustar la transformación */
+}
+  
+.barra.activo:nth-child(3) {
+    transform: rotate(-45deg) translate(-6px, -6px); /* Ajustar la transformación */
+}
+  
+.enlaces {
+    display: none;
+}
+  
+.enlaces.mostrar {
+    display: block;
+}
+  
+.cabezero h2{
+    text-align: left;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #25FF77;
+    
+}
+.miobjetivo{
+   text-align: left;
+   width: 306px;
+   display: flex;
+   justify-content: center;
+   margin: 0 auto;
+   font-size: 1.3em;
+   font-family: 'Roboto', sans-serif;
+   color: white;
+}
+
+
+/*contenido*/
+.contenido{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 14em;
+    padding-top: 5em;
+}
+.contenido img{
+    max-width: 300px;
+    height: 100%;
+    
+}
+
+
+
+/*tecnologias*/
+.flexjavas{
+    display: flex;
+}
+.flexalcostado{
+    display: flex;
+}
+.flexalcostadopython{
+    display: flex;
+}
+.flexalcostadoc{
+    display: flex;
+}
+.flexalcostadomysql{
+    display: flex;
+}
+.contenedorgeneral_listasjava{
+    overflow: hidden;
+}
+#palabrashtml{
+    display: none;
+}
+#palabrasjava{
+    display: none;
+}
+#palabrasmysql{
+    display: none;
+}
+#palabraspython{
+    display: none;
+}
+#tecnologias h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 0em 1em;
+}
+#tecnologias p{
+    text-align: center;
+    padding-bottom: 1em;
+    font-family: 'Roboto', sans-serif;
+  
+}
+#palabrashtml h2 {
+    text-align: center;
+    font-size: 1.4em;
+    font-family: 'roboto',sans-serif;
+    padding: 1em 2em;
+}
+#palabrashtml p {
+    font-size: 1em;
+    padding: 1em 3em 1em 3em;
+    text-align: center;
+    width: 310px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    color: white;
+}
+.imgcentral {
+    position: relative;
+    
+}
+  
+/*flex html*/
+.overlay{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+    width:360px; /* Establece el ancho del div de superposición al 100% del contenedor */
+    height: 100%; /* Establece la altura del div de superposición al 100% del contenedor */
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Establece el color de fondo del div de superposición con transparencia */
+    /* Inicialmente, el div de superposición es invisible */
+    transition: opacity 0.3s ease; /* Agrega una transición suave a la propiedad de opacidad */
+}
+.htmlimg:hover .overlay {
+    opacity: 1; /* Al pasar el cursor sobre el contenedor de la imagen, muestra el div de superposición cambiando la opacidad a 1 */
+}
+.overlay h2 {
+    text-align: center;
+    padding: 1em 2em;
+    font-family: 'Roboto', sans-serif;
+
+}
+.overlay p {
+    text-align: center;
+    padding: 1em 2em;
+    font-family: 'Roboto', sans-serif;
+
+}
+.overlay button{
+    display: flex;
+    margin: 0  auto;
+    padding: 0.7em 1em;
+    border-radius: 10px;
+    border: 2px solid #25FF77;
+    background-color: transparent;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.overlay button:hover{
+    background-color: #25FF77;
+}
+
+
+
+
+
+
+
+/*flex java*/
+.imgcentraljava {
+    position: relative;
+ 
+}
+.overlayjavass{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+    width:360px; /* Establece el ancho del div de superposición al 100% del contenedor */
+    height: 100%; /* Establece la altura del div de superposición al 100% del contenedor */
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Establece el color de fondo del div de superposición con transparencia */
+    /* Inicialmente, el div de superposición es invisible */
+    transition: opacity 0.3s ease; /* Agrega una transición suave a la propiedad de opacidad */
+}
+.javaimg:hover .overlayjavass {
+    opacity: 1; /* Al pasar el cursor sobre el contenedor de la imagen, muestra el div de superposición cambiando la opacidad a 1 */
+}
+.overlayjavass h2 {
+    text-align: center;
+    padding: 1em 2em;
+    font-family: 'Roboto', sans-serif;
+
+}
+.overlayjavass p {
+    text-align: center;
+    padding: 1em 2em;
+    font-family: 'Roboto', sans-serif;
+
+}
+.overlayjavass button{
+    display: flex;
+    margin: 0  auto;
+    padding: 0.7em 1em;
+    border-radius: 10px;
+    border: 2px solid #25FF77;
+    background-color: transparent;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.overlayjavass button:hover{
+    background-color: #25FF77;
+}
+
+
+
+
+/*flex mysql*/
+.imgoverlaymysql {
+    position: relative;
+ 
+}
+.overlaymysql{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+    width:360px; /* Establece el ancho del div de superposición al 100% del contenedor */
+    height: 100%; /* Establece la altura del div de superposición al 100% del contenedor */
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Establece el color de fondo del div de superposición con transparencia */
+    /* Inicialmente, el div de superposición es invisible */
+    transition: opacity 0.3s ease; /* Agrega una transición suave a la propiedad de opacidad */
+}
+.mysqlimg:hover .overlaymysql {
+    opacity: 1; /* Al pasar el cursor sobre el contenedor de la imagen, muestra el div de superposición cambiando la opacidad a 1 */
+}
+.overlaymysql h2 {
+    text-align: center;
+    padding: 1em 2em;
+    font-family: 'Roboto', sans-serif;
+
+}
+.overlaymysql p {
+    text-align: center;
+    padding: 1em 2em;
+    font-family: 'Roboto', sans-serif;
+
+}
+.overlaymysql button{
+    display: flex;
+    margin: 0  auto;
+    padding: 0.7em 1em;
+    border-radius: 10px;
+    border: 2px solid #25FF77;
+    background-color: transparent;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.overlaymysql button:hover{
+    background-color: #25FF77;
+}
+
+
+
+
+
+
+
+/*flex python*/
+.imgoverlaypython {
+    position: relative;
+ 
+}
+.overlaypyton{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+    width:360px; /* Establece el ancho del div de superposición al 100% del contenedor */
+    height: 100%; /* Establece la altura del div de superposición al 100% del contenedor */
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Establece el color de fondo del div de superposición con transparencia */
+    /* Inicialmente, el div de superposición es invisible */
+    transition: opacity 0.3s ease; /* Agrega una transición suave a la propiedad de opacidad */
+}
+.pythonlimg:hover .overlaypyton {
+    opacity: 1; /* Al pasar el cursor sobre el contenedor de la imagen, muestra el div de superposición cambiando la opacidad a 1 */
+}
+.overlaypyton h2 {
+    text-align: center;
+    padding: 1em 2em;
+    font-family: 'Roboto', sans-serif;
+
+}
+.overlaypyton p {
+    text-align: center;
+    padding: 1em 2em;
+    font-family: 'Roboto', sans-serif;
+
+}
+.overlaypyton button{
+    display: flex;
+    margin: 0  auto;
+    padding: 0.7em 1em;
+    border-radius: 10px;
+    border: 2px solid #25FF77;
+    background-color: transparent;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.overlaypyton button:hover{
+    background-color: #25FF77;
+}
+
+
+
+.htmlimg img, .javaimg img , .mysqlimg img , .pythonlimg img {
+    max-width: 360px;
+    display: flex;
+    justify-content: center;
+    margin:  0 auto;
+    padding-bottom: 1em;
+   
+}
+#palabrashtml button{
+    margin: 0 auto;
+    display: flex;
+    
+}
+.flexjava ,.flexmysql, .flexmpython , .flexhtml{
+    padding-bottom: 6em;
+}
+
+   
+
+
+/*nota */
+.nota{
+    padding: 0em 2em;
+}
+.nota h1{
+    text-align: center;
+    padding-bottom: 0.7em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: #25FF77;
+}
+.nota p{
+    text-align: center;
+    padding-bottom: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+.nota button{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 0.7em 1em;
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+    border: 2px solid #25FF77;
+    border-radius: 10px;
+}
+.botonnota{
+    padding-bottom: 4em;  
+}
+.botonnota a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*proyectos java*/
+.proyectos_listajava{
+    display: flex;
+    padding-bottom: 3em;
+    
+}
+.java h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 2em;
+}
+.contenedor_proyectos-java img{
+    width: 100px;
+}
+#listadeproyectos-java{
+    display: flex;
+    padding-bottom: 3em;  
+}
+.listageneraljava{
+    overflow: hidden;
+}
+.cartajava h3{
+    text-align: center;
+    padding: 1em 2em;
+    font-family: 'Roboto', sans-serif;
+} 
+.cartajavaprimero h3{
+    text-align: center;
+    padding: 1em 2em;
+    font-family: 'Roboto', sans-serif;
+}
+.cartajavaprimero p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.overlayjava{
+    position: relative;
+    height: 578px;
+    bottom: 108px;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 9px;
+  
+}
+.fondograndejava:hover .overlayjava{
+    opacity: 1;
+}
+.overlayjava p{
+    font-size: 1em;
+    padding-top: 10em;
+    text-align: center;
+    width: 420px;
+    height: auto;
+
+}
+.palabrasoverlay button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1em 2em;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid #25FF77;
+    color: #25FF77;
+}
+.overlayjavaflex{
+    position: relative;
+    bottom: 108px;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    height: 300px;
+    width: 330px;
+    border-radius: 12px
+
+}
+.palabrascartas:hover .overlayjavaflex{
+    opacity: 1;
+}
+.palabrasoverlay .textosflexjava{
+    margin: 0em 2em;
+    font-size: 0.9em;
+    padding-top: 7em;
+}
+#listadeproyectos-java{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.boton{
+    display: flex;
+    justify-content: right;
+    padding: 0em 2em;
+    
+}
+.boton button{
+    padding: 0.4em 0.7em;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+   
+}
+.boton button span{
+    color: white;
+}
+.cartajava p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.palabrascartas{
+    padding-top: 3em;
+}
+.palabrascartas p{
+    padding-bottom: 5em;
+}
+.cartajavaprimero {
+    background-image: url(/imgproyectosgeneral/lugar-vuelo-cielo-atardecer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: multiply;
+    margin: 1em 1em;
+    height: 578px;
+    width: 590px;
+    border-radius: 10px;
+}
+.cartajava{
+    background-image: url(/imgproyectosgeneral/lugar-vuelo-cielo-atardecer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Un color negro semitransparente */
+    background-blend-mode: multiply; /* Mezcla la imagen y el color de fondo */ 
+    margin: 1em 2em;
+    height: 300px;
+    max-width: 500px;
+    border-radius: 10px;
+}
+.cartajava:nth-child(2){
+    background-image: url(/imgproyectosgeneral/conductor-camion-inspeccionando-vehiculo-largo-camion-antes-conducir.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajava:nth-child(3){
+    background-image: url(/imgproyectosgeneral/recursos\ huimanos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajava:nth-child(4){
+    background-image: url(/imgproyectosgeneral/geinzformawoomandandmen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajava:nth-child(5){
+    background-image: url(/imgproyectosgeneral/calculadora-indice-masa-corporal-imc-obesos-sobrepeso-categoria-normal_664444-10.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajava:nth-child(6){
+    background-image: url(/imgproyectosgeneral/calculadora.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajava:nth-child(7){
+    background-image: url(/imgproyectosgeneral/qr\ \(2\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajava:nth-child(8){
+    background-image: url(/imgproyectosgeneral/virus\ informatico.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajava:nth-child(9){
+    background-image: url(/imgproyectosgeneral/contador_saldo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*slider java*/
+.oculto{
+    height: 0;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+}
+.primeraparte {
+    height: 1065px;
+    background-color: #131315;
+    position: relative;
+    transition: width 0.5s;
+    bottom: 729px;
+    overflow: hidden;
+}
+.primeraparte h1 {
+    text-align: center;
+    padding-top: 5em;
+    font-size: 4em;
+    font-family: 'Roboto', sans-serif;
+    color: #25FF77;
+}
+.primeraparte p {
+    text-align: center;
+    padding-top: 2em;
+    font-size: 2m;
+    font-family: 'Roboto', sans-serif;
+    color: #25FF77;
+    margin:  0em 3em;
+}
+.botonocultar button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: transparent;
+    color: #25FF77;
+    border: 2px solid #25FF77;
+    border-radius: 20px;
+}
+.botondentro button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: transparent;
+    color: #25FF77;
+    border: 2px solid #25FF77;
+    border-radius: 20px;
+}
+.botonocultar {
+    padding: 4em 0em;
+}
+#java{
+    height: 1023px;
+}
+.botonocultar button:hover{
+    background-color: #25FF77;
+}
+.botonocultar button:hover,
+.botonocultar button:focus{
+    color: white;
+}
+
+.botondentro button:hover{
+    background-color: #25FF77;
+}
+.botondentro button:hover,
+.botondentro button:focus{
+    color: white;
+}
+.contenedorgeneral_listasjava{
+    height: 1074px;
+    overflow: hidden;
+}
+.flexjavas{
+    display: flex;
+    justify-content: center;
+    
+    align-content: flex-start;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+#cartasjavaid{
+        max-width: 400px;
+}
+#tamañobajojava{
+        width: 256px;
+}
+.bajoelgeraljava{
+        display: flex;
+}
+
+/*proyectos javascrip*/
+.proyectos_listajavascrip{
+    display: flex;  
+    padding-bottom: 3em;
+}
+.js h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 2em;
+}
+#listadeproyectosjs{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.cartajs h3{
+    text-align: center;
+    padding: 1em 4.5em;
+    font-family: 'Roboto', sans-serif;
+}
+.cartajs p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.listageralajs{
+    overflow: hidden;
+    position: relative;
+}
+.palabrascartasjs p{
+    padding-bottom: 5em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.palabrascartasjs{
+    padding-top: 3em;
+}
+.palabrascartasjs h3{
+    text-align: center;
+    padding: 1em 5em;
+    font-family: 'Roboto', sans-serif;
+}
+.palabrascartasjs button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+    color: #25FF77;
+    padding: 1em 2em;
+    border: #25FF77 solid;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.overlayjs{
+    position: relative;
+    bottom: 108px;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    height: 578px;
+    width: auto;
+    border-radius: 12px
+
+}
+.palabrascartasjs:hover .overlayjs{
+    opacity: 1;
+}
+.palabrasoverlayjs p{
+    padding-top: 10em;
+    margin: 0em 5em;
+}
+.overlayjsflex{
+    position: relative;
+    bottom: 130px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease;
+    height: 300px;
+    width: 258px;
+    border-radius: 12px;
+    opacity: 0;
+
+}
+.palabrascartasjs:hover .overlayjsflex{
+    opacity: 1;
+}
+.palabrasoverlayjs .textosflexjavajs{
+    margin: 0em 2em;
+    font-size: 0.9em;
+    padding-top: 9em;
+    padding-bottom: 1em;
+}
+.cartajs button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
+    padding: 1em 2em;
+    border: #25FF77 solid;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.cartasjsprimero {
+    background-image: url(/imgproyectosgeneral/lugar-vuelo-cielo-atardecer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: multiply;
+    margin: 1em 1em;
+    height: 578px;
+    width: 590px;
+    border-radius: 10px;
+}
+.cartajs{
+    background-image: url(/imgproyectosgeneral/lugar-vuelo-cielo-atardecer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Un color negro semitransparente */
+    background-blend-mode: multiply; /* Mezcla la imagen y el color de fondo */ 
+    margin: 1em 2em;
+    height: 300px;
+    max-width: 500px;
+    border-radius: 10px;
+}
+.cartajs:nth-child(2){
+    background-image: url(/imgproyectosgeneral/conductor-camion-inspeccionando-vehiculo-largo-camion-antes-conducir.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajs:nth-child(3){
+    background-image: url(/imgproyectosgeneral/recursos\ huimanos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajs:nth-child(4){
+    background-image: url(/imgproyectosgeneral/geinzformawoomandandmen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajs:nth-child(5){
+    background-image: url(/imgproyectosgeneral/calculadora-indice-masa-corporal-imc-obesos-sobrepeso-categoria-normal_664444-10.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajs:nth-child(6){
+    background-image: url(/imgproyectosgeneral/calculadora.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajs:nth-child(7){
+    background-image: url(/imgproyectosgeneral/qr\ \(2\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajs:nth-child(8){
+    background-image: url(/imgproyectosgeneral/virus\ informatico.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartajs:nth-child(9){
+    background-image: url(/imgproyectosgeneral/contador_saldo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.botonjs{
+    display: flex;
+    justify-content: right;
+    padding: 0em 2em;
+}
+.botonjs button{
+    padding: 0.4em 0.7em;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    
+}
+.botonjs button span{
+    color: white;
+}
+
+/*slider js*/
+#js{
+    height: 1023px;
+}
+.ocultos{
+    height: 0;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+}
+.primerapartejs{
+    height: 1065px;
+    background-color: #131315;
+    position: relative;
+    transition: width  0.5s;
+    top: -821px;
+    width: 100%;
+
+    overflow: hidden;
+}
+.primerapartejs h1{
+    text-align: center;
+    padding-top: 7em;
+    font-size: 4em;
+    font-family: 'Roboto', sans-serif;
+    color: #25FF77;
+}
+
+.primerapartejs p{
+    text-align: center;
+    padding-top: 2em;
+    font-size: 2m;
+    font-family: 'Roboto', sans-serif;
+    color: #25FF77;
+    margin: 0em 3em;
+   
+}
+.palabrasjshtml{
+    padding-bottom: 4em;
+}
+.botonocultarjs button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: transparent;
+    color: #25FF77;
+    border: 2px solid #25FF77;
+    border-radius: 20px;
+  
+}
+.botondentrojs button{
+display: flex;
+justify-content: center;
+margin: 0 auto;
+align-items: center;
+padding: 1em 2em;
+background-color: transparent;
+color: #25FF77;
+border: 2px solid #25FF77;
+border-radius: 20px;
+}
+.botondentrojs button:hover{
+background-color: #25FF77;
+}
+.botonocultarjs button:hover{
+background-color: #25FF77;
+}
+.botonocultarjs button:hover,
+.botonocultarjs button:focus{
+color: white;
+}
+.botondentrojs button:hover,
+.botondentrojs button:focus{
+color: white;
+}
+
+
+/*proyectos python*/
+.proyectos_listapython{
+    display: flex;
+    padding-bottom: 3em;
+}
+.python h1{
+    padding-top: 3em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 2em;
+}
+.palabrascartaspython h3{ 
+    text-align: center;
+    padding: 1em 4.5em;
+    font-family: 'Roboto', sans-serif;
+}
+.palabrascartaspython p{
+    padding-bottom: 5em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.cartaspython p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.cartaspython{
+    padding-top: 3em;
+   
+}
+.cartapython button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
+    padding: 1em 2em;
+    border: #25FF77 solid;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.overlaypython{
+    position: relative;
+    bottom: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease;
+    height: 578px;
+    width: auto;
+    border-radius: 12px;
+    opacity: 0;
+}
+.palabrascartaspython:hover .overlaypython{
+    opacity: 1;
+}
+
+.overlaypythonaflex{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease; 
+    border-radius: 11px;
+    opacity: 0;
+}
+.palabrascartaspython:hover .overlaypythonaflex{
+    opacity: 1;
+}
+.textosflexpython {
+    padding-top: 1em;
+    margin: 0em 1em;
+    padding-bottom: 0;
+}
+
+.palabrascartaspython p {
+    padding-top: 6em;
+    padding-bottom: 2em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.overlaypythonaflex{
+    position: relative;
+    bottom: 84px;
+    height: 302px;
+}
+
+.palabrascartaspython button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
+    padding: 1em 2em;
+    border: #25FF77 solid;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.cartasjsprimeropython {
+    background-image: url(/imgproyectosgeneral/lugar-vuelo-cielo-atardecer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: multiply;
+    margin: 1em 1em;
+    height: 578px;
+    width: 590px;
+    border-radius: 10px;
+}
+.cartapython{
+    background-image: url(/imgproyectosgeneral/lugar-vuelo-cielo-atardecer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Un color negro semitransparente */
+    background-blend-mode: multiply; /* Mezcla la imagen y el color de fondo */ 
+    margin: 1em 2em;
+    height: 300px;
+    max-width: 500px;
+    border-radius: 10px;
+}
+.cartapython:nth-child(2){
+    background-image: url(/imgproyectosgeneral/conductor-camion-inspeccionando-vehiculo-largo-camion-antes-conducir.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartapython:nth-child(3){
+    background-image: url(/imgproyectosgeneral/recursos\ huimanos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartapython:nth-child(4){
+    background-image: url(/imgproyectosgeneral/geinzformawoomandandmen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartapython:nth-child(5){
+    background-image: url(/imgproyectosgeneral/calculadora-indice-masa-corporal-imc-obesos-sobrepeso-categoria-normal_664444-10.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartapython:nth-child(6){
+    background-image: url(/imgproyectosgeneral/calculadora.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartapython:nth-child(7){
+    background-image: url(/imgproyectosgeneral/qr\ \(2\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartapython:nth-child(8){
+    background-image: url(/imgproyectosgeneral/virus\ informatico.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartapython:nth-child(9){
+    background-image: url(/imgproyectosgeneral/contador_saldo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pañabrascartaspython button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
+    padding: 1em 2em;
+    border: #25FF77 solid;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+#listaproyectospython{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.listeageneralpython{
+    overflow: hidden;
+    position: relative;
+}
+.botonpython{
+    display: flex;
+    justify-content: right;
+    padding: 0em 2em;
+}
+.botonpython button{
+    padding: 0.4em 0.7em;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+}
+.botonpython button span{
+    color: white;
+}
+
+
+/*slider python*/
+#proyectos-python{
+    height: 1023px;
+}
+.primerapartepython{
+    height: 1065px;
+    background-color: #131315;
+    position: relative;
+    transition: width  0.5s;
+    top: -821px;
+    width: 100%;
+
+    overflow: hidden;
+}
+.primerapartepython h1{
+    text-align: center;
+    padding-top: 7em;
+    font-size: 4em;
+    font-family: 'Roboto', sans-serif;
+    color: #25FF77;
+}
+.primerapartepython p{
+    text-align: center;
+    padding-top: 2em;
+    font-size: 2m;
+    font-family: 'Roboto', sans-serif;
+    color: #25FF77;
+   margin: 0em 3em;
+}
+.palabraspython{
+    padding-bottom: 4em;
+}
+.primerapartepython button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: transparent;
+    color: #25FF77;
+    border: 2px solid #25FF77;
+    border-radius: 20px;
+  
+}
+.botondentropython button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: transparent;
+    color: #25FF77;
+    border: 2px solid #25FF77;
+    border-radius: 20px;
+}
+
+.botondentropython button:hover{
+    background-color: #25FF77;
+}
+.botonocultarpython button:hover{
+    background-color: #25FF77;
+}
+.botonocultarpython button:hover,
+.botonocultarpython button:focus{
+    color: white;
+}
+.botondentropython button:hover,
+.botondentropython button:focus{
+    color: white;
+}
+
+
+/*proyectos c*/
+.proyectos_listac{
+    display: flex;
+    padding-bottom: 3em;
+}
+.c h1{
+    padding-top: 3em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 2em;
+}
+.pañabrascartasc button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
+    padding: 1em 2em;
+    border: #25FF77 solid;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+#listaproyectosc{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.listageneralc{
+    position: relative;
+    overflow: hidden;
+}
+.botonc{
+    display: flex;
+    justify-content: right;
+    padding: 0em 2em;
+}
+.botonc button{
+    padding: 0.4em 0.7em;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+}
+.overlayc{
+    position: relative;
+    bottom: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease;
+    height: 578px;
+    width: auto;
+    border-radius: 12px;
+    opacity: 0;
+}
+.palabrascartasc:hover .overlayc{
+    opacity: 1;
+}
+
+.overlaycflex{
+    position: relative;
+    bottom: 82px;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    height: 300px;
+    width: 257px;
+    border-radius: 12px;
+
+}
+.palabrascartasc:hover .overlaycflex{
+    opacity: 1;
+}
+
+.palabrasoverlayc .textosflexc{
+    margin: 0em 2em;
+    font-size: 0.9em;
+    padding-top: 7em;
+}
+.palabrascartasc p{
+   padding-bottom: 1.5em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 11em;
+}
+
+.cartasjsprimeroc {
+    background-image: url(/imgproyectosgeneral/lugar-vuelo-cielo-atardecer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: multiply;
+    margin: 1em 1em;
+    height: 578px;
+    width: 590px;
+    border-radius: 10px;
+}
+.cartac{
+    background-image: url(/imgproyectosgeneral/lugar-vuelo-cielo-atardecer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Un color negro semitransparente */
+    background-blend-mode: multiply; /* Mezcla la imagen y el color de fondo */ 
+    margin: 1em 2em;
+    height: 300px;
+    max-width: 500px;
+    border-radius: 10px;
+}
+.cartac:nth-child(2){
+    background-image: url(/imgproyectosgeneral/conductor-camion-inspeccionando-vehiculo-largo-camion-antes-conducir.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartac:nth-child(3){
+    background-image: url(/imgproyectosgeneral/recursos\ huimanos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartac:nth-child(4){
+    background-image: url(/imgproyectosgeneral/geinzformawoomandandmen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartac:nth-child(5){
+    background-image: url(/imgproyectosgeneral/calculadora-indice-masa-corporal-imc-obesos-sobrepeso-categoria-normal_664444-10.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartac:nth-child(6){
+    background-image: url(/imgproyectosgeneral/calculadora.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartac:nth-child(7){
+    background-image: url(/imgproyectosgeneral/qr\ \(2\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartac:nth-child(8){
+    background-image: url(/imgproyectosgeneral/virus\ informatico.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartac:nth-child(9){
+    background-image: url(/imgproyectosgeneral/contador_saldo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.botonc span{
+    color: white;
+}
+.palabrascartasc button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
+    padding: 1em 2em;
+    border: #25FF77 solid;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.palabrascartasc h3{ 
+    text-align: center;
+    padding: 1em 4.5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*slider c*/
+#c{
+    height: 1023px;
+}
+.primerapartec{
+    height: 1011px;
+    background-color: #131315;
+    position: relative;
+    transition: width  0.5s;
+    top: -821px;
+    width: 100%;
+
+    overflow: hidden;
+}
+.primerapartec h1{
+    text-align: center;
+    padding-top: 7em;
+    font-size: 4em;
+    font-family: 'Roboto', sans-serif;
+    color: #25FF77;
+}
+
+.primerapartec p{
+    text-align: center;
+    padding-top: 2em;
+    font-size: 2m;
+    font-family: 'Roboto', sans-serif;
+    color: #25FF77;
+    margin: 0em 3em;
+  
+}
+.palabrasc{
+    padding-bottom: 4em;
+}
+.primerapartec button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: transparent;
+    color: #25FF77;
+    border: 2px solid #25FF77;
+    border-radius: 20px;
+  
+}
+.botondentroc button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: transparent;
+    color: #25FF77;
+    border: 2px solid #25FF77;
+    border-radius: 20px;
+}
+
+.botondentroc button:hover{
+    background-color: #25FF77;
+}
+.botonocultarc button:hover{
+    background-color: #25FF77;
+}
+.botonocultarc button:hover,
+.botonocultarc button:focus{
+    color: white;
+}
+.botondentroc button:hover,
+.botondentroc button:focus{
+    color: white;
+}
+
+
+
+/*proyectos mysql*/
+.proyectos_listamysql{
+    display: flex;
+    padding-bottom: 3em;
+}
+.mysql h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 2em;
+}
+.pañabrascartasmysql{
+    padding-top: 3em;
+}
+.pañabrascartasmysql h3{
+    text-align: center;
+    padding: 1em 4.5em;
+    font-family: 'Roboto', sans-serif;
+}
+.pañabrascartasmysql p{
+    padding-bottom: 5em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.pañabrascartasmysql button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
+    padding: 1em 2em;
+    border: #25FF77 solid;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.overlamysql{
+    position: relative;
+    bottom: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease;
+    height: 578px;
+    width: auto;
+    border-radius: 12px;
+    opacity: 0;
+}
+.palabrascartasmysql:hover .overlamysql{
+    opacity: 1;
+}
+.palabrasoverlaymysql p{
+    padding-top: 10em;
+    margin: 0em 2em;
+}
+
+.overlaymysqlflex{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease; 
+    border-radius: 11px;
+    opacity: 0;
+}
+.palabrascartasmysql:hover .overlaymysqlflex{
+    opacity: 1;
+}
+.textosflexmysql {
+    padding-top: 1em;
+    margin: 0em 1em;
+    padding-bottom: 0;
+}
+
+.palabrascartasmysql p{
+    padding-top: 5em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 1.5em;
+}
+.overlaymysqlflex{
+    position: relative;
+    bottom: 84px;
+    height: 302px;
+}
+
+.cartasjsprimeromysql {
+    background-image: url(/imgproyectosgeneral/lugar-vuelo-cielo-atardecer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: multiply;
+    margin: 1em 1em;
+    height: 578px;
+    width: 590px;
+    border-radius: 10px;
+}
+.cartamysql{
+    background-image: url(/imgproyectosgeneral/lugar-vuelo-cielo-atardecer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Un color negro semitransparente */
+    background-blend-mode: multiply; /* Mezcla la imagen y el color de fondo */ 
+    margin: 1em 2em;
+    height: 300px;
+    max-width: 500px;
+    border-radius: 10px;
+}
+.cartamysql:nth-child(2){
+    background-image: url(/imgproyectosgeneral/conductor-camion-inspeccionando-vehiculo-largo-camion-antes-conducir.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartamysql:nth-child(3){
+    background-image: url(/imgproyectosgeneral/recursos\ huimanos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartamysql:nth-child(4){
+    background-image: url(/imgproyectosgeneral/geinzformawoomandandmen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartamysql:nth-child(5){
+    background-image: url(/imgproyectosgeneral/calculadora-indice-masa-corporal-imc-obesos-sobrepeso-categoria-normal_664444-10.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartamysql:nth-child(6){
+    background-image: url(/imgproyectosgeneral/calculadora.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartamysql:nth-child(7){
+    background-image: url(/imgproyectosgeneral/qr\ \(2\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartamysql:nth-child(8){
+    background-image: url(/imgproyectosgeneral/virus\ informatico.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cartamysql:nth-child(9){
+    background-image: url(/imgproyectosgeneral/contador_saldo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contenedor_proyectos_mysql button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
+    padding: 1em 2em;
+    border: #25FF77 solid;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+#listaporyectomysql{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.listageneralmysql{
+    overflow: hidden;
+    position: relative;
+}
+.botonmysql{
+    display: flex;
+    justify-content: right;
+    padding: 0em 2em;
+}
+.botonmysql button{
+    padding: 0.4em 0.7em;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+}
+.botonmysql button span{
+    color: white;
+}
+
+.palabrascartasmysql button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
+    padding: 1em 2em;
+    border: #25FF77 solid;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.palabrascartasmysql h3{ 
+    text-align: center;
+    padding: 1em 4.5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*slider mysql*/
+#mysql{
+    height: 1023px;
+}
+.primerapartemysql{
+    height: 1065px;
+    background-color: #131315;
+    position: relative;
+    transition: width  0.5s;
+    top: -821px;
+    width: 100%;
+
+    overflow: hidden;
+}
+.primerapartemysql h1{
+    text-align: center;
+    padding-top: 7em;
+    font-size: 4em;
+    font-family: 'Roboto', sans-serif;
+    color: #25FF77;
+}
+
+.primerapartemysql p{
+    text-align: center;
+    padding-top: 2em;
+    font-size: 2m;
+    font-family: 'Roboto', sans-serif;
+    color: #25FF77;
+    margin: 0em 3em;
+   
+}
+.palabrasmysql{
+    padding-bottom: 4em;
+}
+.primerapartemysql button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: transparent;
+    color: #25FF77;
+    border: 2px solid #25FF77;
+    border-radius: 20px;
+  
+}
+.botondentromysql button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: transparent;
+    color: #25FF77;
+    border: 2px solid #25FF77;
+    border-radius: 20px;
+}
+
+.botondentromysql button:hover{
+    background-color: #25FF77;
+}
+.botonocultarmysql button:hover{
+    background-color: #25FF77;
+}
+.botonocultarmysql button:hover,
+.botonocultarmysql button:focus{
+    color: white;
+}
+.botondentromysql button:hover,
+.botondentromysql button:focus{
+    color: white;
+}
+
+
+/*sobre mi */
+#sobre_mi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+.sobre_mi{
+    margin: 0 auto;
+   
+}
+.sobre_mi h1{
+    text-align: left;
+    font-size: 3em;
+    font-family: 'Cabin', sans-serif;
+    color: #25FF77;
+    
+}
+.sobre_mi p{
+    text-align: left;
+    width: 211px;
+    font-family: 'Asap Condensed', sans-serif;
+
+}
+.sobre_mi{
+    padding-top: 4em;
+}
+.certificacion h1{
+    text-align: left;
+    font-size: 3em;
+    font-family: 'Cabin', sans-serif;
+    color: #25FF77;
+    
+}
+.certificacion p{
+    text-align: left;
+    width: 211px;
+    font-family: 'Asap Condensed', sans-serif;
+}
+.certificacion{
+    padding-top: 4em;
+}
+.experiencia h1{
+    text-align: left;
+    font-size: 3em;
+    font-family: 'Cabin', sans-serif;
+    color: #25FF77;
+    
+}
+.experiencia p{
+    text-align: left;
+    width: 211px;
+    font-family: 'Asap Condensed', sans-serif;
+}
+.experiencia{
+    padding-top: 4em;
+}
+
+
+/*redes*/
+#redes{
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+}
+.redes{
+    background-color: black;
+    width: 100%;
+}
+.redes img{
+    max-width: 24px;
+   margin: 0em 0.2em;
+}
+.titulosredes{ 
+   padding-bottom: 1em;
+}
+.titulosredes h1{
+    text-align:center;
+    padding-bottom: 0.5em;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 1em;
+
+}
+.titulosredes p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 1em;
+}
+.logoredes{
+   
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+    padding-top: 1em;
+
+}
+.lineavertical{
+    background-color: white;
+    width: 1px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+   
+}
+.lineavertical2{
+    background-color: white;
+    width: 1px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.lineahorizontal{
+    background-color: white;
+    width: 140px;
+    height: 1px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.espciolineavertical{
+    padding-top: 0.5em;
+}
+.final{
+    text-align: center;
+    font-size: 0.7em;
+    padding-bottom: 3em;
+    font-family: 'Roboto', sans-serif;
+}
+.circulo{
+    background-color:transparent;
+    height: 70px;
+    width: 70px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 3px solid white;
+    position: relative;
+    top:4.5em;
+   
+}
+
+@media screen and (min-width: 700px) {
+    .parrafo-tecnologia{
+        display: none;
+    }
+    #menuhamburgesa{
+        display: none;
+    }
+    #cabezero{
+        display: none;
+    }
+    #cabezero2{
+        display: block;
+    }
+    .contenido{
+        display: none;
+        
+    }
+    #entradamediaquiri{
+        display: block;
+    }
+    #tecnologias h1, .linea {
+        display: none;
+    }
+    .mpb h1{
+        text-align: left;
+        position: relative;
+        top: 21px;
+        padding-left: 1em;
+        font-size: 3em;
+        font-family: 'roboto',sans-serif;
+        width: 30px;
+    }
+    .links{
+        display: flex;
+        justify-content: right;
+       
+    }
+    .links a{
+        text-decoration: none;
+        
+    }
+    .links{
+        padding: 0em 2em;
+    }
+    .links p{
+        text-align: left;
+        color: white;
+        margin: 0em 1em;
+        font-family: 'roboto',sans-serif;
+        position: relative;
+        bottom: 1em;
+        color: #25FF77;
+    }
+    .links p:hover{
+        color: #fff;
+    }
+
+    /*entrada 2*/
+    #entradamediaquiri{
+        height: 400px;
+    }
+    .generalentrada2{
+        display: flex;
+        justify-content: center;
+        padding: 2em 0em;
+
+    }
+    .img img{
+        padding-top: 3em;
+        max-width: 300px;
+    }
+    .sobremi {
+        text-align: left;
+        padding: 4em 2em;
+        
+    }
+    .sobremi h2{
+        font-size: 3em;
+        font-family: 'roboto',sans-serif;
+    }
+    .miobjetio2{
+        padding-top: 1em;
+        max-width: 306px;
+        font-size: 1em;
+        font-family: 'roboto',sans-serif;
+    }
+
+   
+  
+    
+
+}
+
+@media screen and (min-width: 1200px) {
+    .overlaymysql{
+        display: none;
+    }
+    .overlay {
+       display: none;
+      }
+      .overlayjavass{
+        display: none;
+      }
+      .overlaypyton{
+        display: none;
+      }
+    .parrafo-tecnologia{
+        display: none;
+    }
+    .sobremi {
+     
+        text-align: left;
+        padding: 4em 2em;
+    }
+    #mysql{
+        padding-bottom: 9em;
+    }
+    .tecnologias {
+        display: block;
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+    #tecnologias{
+        height: auto; 
+    }
+
+
+      /*flex html*/
+    #palabrashtml{
+        display: block;
+    }
+    .htmlimg img{
+       max-width: 360px;
+       padding: 0.5em;
+    }
+    .flexhtml{
+        padding-bottom: 5em;
+        display: flex;
+        justify-content: center;
+        height: auto;
+    }
+    #palabrashtml{
+        font-size: 1.4em;
+        width: 363px;
+        background-color:#25FF77;
+        color: black;
+        position: relative;
+        top: 62px;
+        right: 92px;
+        height: 370px;
+    }
+    #palabrashtml h2{
+        text-align: left;
+        font-size: 1.4em;
+        font-family: 'roboto',sans-serif;
+        padding: 1em 2em;
+    }
+    #palabrashtml p{
+        text-align: left;
+        font-size: 0.8em;
+        width: 315px;
+        padding: 0em 0em 1em 3.5em;
+        color: black;
+        margin: 0;
+    }
+    #palabrashtml button{
+       display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0.5em 1em;
+        border-radius: 20px;
+        border: 2px solid #131315;
+        background-color: transparent;
+    }
+    #palabrashtml a{
+        text-decoration: none;
+        color: black;
+    }
+
+
+    /*flex java*/
+    .imgcentraljava {
+        position: static;
+     
+    }
+    #palabrasjava{
+        display: block;
+    }
+    .javaimg img{
+        
+        max-width: 360px;
+        padding: 0.5em;
+     }
+     .flexjava{
+         display: flex;
+         justify-content: center;
+         height: auto;
+         padding-bottom: 5em;
+       
+        
+     }
+     #palabrasjava{
+         font-size: 1.4em;
+         width: 363px;
+         background-color: #25FF77;
+         color: black;
+         position: relative;
+         top: 62px;
+        left: 64px;
+         height: 370px;
+     }
+     #palabrasjava h2{
+         text-align: left;
+         font-size: 1.4em;
+         font-family: 'roboto',sans-serif;
+         padding: 1em 0em 0.5em 2em;
+     }
+     #palabrasjava p{
+         text-align: left;
+         font-size: 0.8em;
+         width: 315px;
+         padding-left: 3.5em;
+         color: black;
+     }
+     #palabrasjava button{
+        display: flex;
+         justify-content: center;
+         margin: 0 auto;
+         padding: 0.5em 1em;
+         border-radius: 20px;
+         border: 2px solid #131315;
+         background-color: transparent;
+     }
+     #palabrasjava a{
+         text-decoration: none;
+         color: black;
+     }
+
+
+   /*flex mysql*/
+   #palabrasmysql{
+    display: block;
+    }
+     .flexmysql{
+        display: flex;
+        justify-content: center;
+        height: auto;
+        padding-bottom: 5em;
+       
+    }
+    .mysqlimg img{
+        padding-bottom: 0.5em;
+        max-width: 360px;
+       
+      
+     }
+    #palabrasmysql{
+        font-size: 1.4em;
+        width: 363px;
+        background-color: #25FF77;
+        color: black;
+        position: relative;
+        top: 62px;
+        right: 92px;
+        height: 370px;
+    }
+    #palabrasmysql h2{
+        text-align: left;
+        font-size: 1.4em;
+        font-family: 'roboto',sans-serif;
+        padding: 1em 2em;
+    }
+    #palabrasmysql p{
+        text-align: left;
+        font-size: 0.8em;
+        width: 315px;
+        padding-left: 3.5em;
+        color: black;
+        
+    }
+    #palabrasmysql button{
+        display: flex;
+         justify-content: center;
+         margin: 0 auto;
+         padding: 0.5em 1em;
+         border-radius: 20px;
+         border: 2px solid #131315;
+         background-color: transparent;
+    }
+     #palabrasmysql a{
+         text-decoration: none;
+         color: black;
+    }
+ 
+
+    /*flex python*/
+    #palabraspython{
+    display: block;
+    }
+    .imgoverlaypython {
+    position: static;
+ 
+    }   
+    .pythonlimg img{
+        max-width: 360px;
+       padding-bottom: 0.5em;
+     }
+     .flexmpython{
+         display: flex;
+         justify-content: center;
+         height: auto;
+       
+        
+     }
+     #palabraspython{
+         font-size: 1.4em;
+         width: 363px;
+         background-color: #25FF77;
+         color: black;
+         position: relative;
+         top: 62px;
+        left: 64px;
+         height: 370px;
+     }
+     #palabraspython h2{
+         text-align: left;
+         font-size: 1.4em;
+         font-family: 'roboto',sans-serif;
+         padding: 1em 2em;
+     }
+     #palabraspython p{
+         text-align: left;
+         font-size: 0.8em;
+         width: 315px;
+         padding-left: 3.5em;
+         color: black;  
+     }
+     #palabraspython button{
+        display: flex;
+         justify-content: center;
+         margin: 0 auto;
+         padding: 0.5em 1em;
+         border-radius: 20px;
+         border: 2px solid #131315;
+         background-color: transparent;
+     }
+     #palabraspython a{
+         text-decoration: none;
+         color: black;
+     }
+
+     
+    /*redes */
+    #sobre_mi{
+        background-image: url(/imgfondos/accesorios-personales-taza-cafe-auricular-anteojos-teclado-sobre-fondo-negro.jpg);
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.5); /* Un color negro semitransparente */
+        background-blend-mode: multiply; /* Mezcla la imagen y el color de fondo */ 
+       height: 700px;
+     
+    }
+    .fondo{
+        background-color: #131315;
+        padding: 8em 2em;
+    }
+    .fondo_color{
+        display: flex;
+     
+    }
+    .sobre_mi{
+        padding: 3em 3em;
+    }
+    .certificacion{
+        padding: 3em 3em;
+    }
+    .experiencia{
+        padding: 3em 3em;
+    }
+    .certificacion p {
+        text-align: left;
+        width: 315px;
+        font-family: 'Asap Condensed', sans-serif;
+    }
+
+
+/*proyectos java*/
+#java{
+    padding-top: 4em;
+    padding-bottom: 5em;
+}
+.java{
+    display: none;
+}
+.primeraparte{
+    height: 1065px;
+    background-color: #131315;
+    position: relative;
+    transition: width  0.5s;
+    bottom: 576px;
+    overflow: hidden;
+}
+.segundapartemostrar{
+    height: 523px;
+    width: 100%;
+}
+#botones{
+    display: flex;
+}
+
+.listageneraljava{
+    position: relative;
+}
+
+/*proyectos js*/
+    #proyectos-javasctip{
+        height: 1023px;
+    }
+    .flexalcostado{
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+/*proyectos python*/
+    .flexalcostadopython{
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        }
+        #cartaspythonid{
+            max-width: 400px;
+        }
+        #cartaspythonid {
+            max-width: 400px;
+        }
+        #cartaspythonid{
+            width: 256px;
+        }
+        .debajoimgpython{
+            display: flex;
+        }
+
+/*proyectos c*/
+    .flexalcostadoc{
+        display: flex;
+        justify-content: center;
+      
+        align-content: flex-start;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+       }
+        #cartascid{
+            max-width: 400px;
+        }
+        #cartascid {
+            max-width: 400px;
+        }
+        #cartascid{
+            width: 256px;
+        }
+        .debajoimgc{
+            display: flex;
+        }
+
+/*proyectos mysql*/
+    .flexalcostadomysql{
+        display: flex;
+        justify-content: center; 
+        align-content: flex-start;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+       }   
+        #cartasmysqlid{
+            max-width: 400px;
+        }
+        #cartasmysqlid {
+            max-width: 400px;
+        }
+        #cartasmysqlid{
+            width: 256px;
+        }
+        .debajoimgpython{
+            display: flex;
+        }
+
+}
+
+@media screen and (min-width: 1475px){
+    .tecnologias {
+      
+        padding-top: 4em;
+        padding-bottom: 4em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 2135px){
+    .tecnologias{
+        flex-wrap: nowrap;
+        display: block;
+    }
+}
