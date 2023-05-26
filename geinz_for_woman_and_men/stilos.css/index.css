@@ -1,0 +1,1072 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+.cabezero_2{
+    display: none;
+}
+#usuarios_registrados2{
+    display: block;
+}
+#slogan2mediaquri{
+ display: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*botones*/
+button{
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.6em;
+    border: 0px solid black;
+
+}
+button:hover{
+    background-color: #757575;
+}
+
+/*secciones*/
+.seccion{
+    background-color: white;
+}
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.palabras_h1 h1{
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0 auto;
+}
+
+.bar {
+   width: 100%; 
+    height: 4px;
+    background-color: #000;
+    margin-bottom: 4px;
+}
+.menu {
+    display: none;
+}
+.menu.open {
+    display: block;
+}
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu ul li {
+    padding: 10px;
+    background-color: black;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+.seccion img{
+    padding-top: 1em;
+    max-width: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.texto_geinz p{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.texto h1{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+}
+/*slogan*/
+
+.colorfondo{
+    display: flex;
+    
+}
+.blanco{
+    background-color: #E8E5E4;
+    height: 300px;
+    width: 85px;
+}
+.red{
+    background-color: #F2F4F3;
+    height: 300px;
+    width: 100%;
+}
+.slogan{
+    position: relative;
+    bottom :239px;
+    height: 0px;
+}
+
+.p p{
+    text-align: right;
+    padding-right: 2em;
+    font-family: 'Cabin', sans-serif;
+}
+
+.h1 h1{
+   
+    font-size: 2em;
+    width: 278px;
+    padding-left: 1em;
+    font-family: 'Libre Baskerville', serif;
+}
+.linea-slogan{
+    background-color: black;
+    height: 3px;
+    max-width: 17em;
+    margin: 0em 2em;
+}
+.slogan p{
+    font-size: 0.7em;
+    padding-top: 0.8em;
+    padding-left: 3em;
+    font-family: 'Cabin', sans-serif;
+}
+
+/*productos-geinz*/
+.listaimg_pro img{
+   width: 500px;
+}
+
+#productoslistas{
+ 
+    transition: transform 0.5s ease;
+}
+.padrelistaimg{
+    overflow: hidden;
+}
+
+.listaimg_pro{
+  padding: 0em 0.4em;
+
+}
+
+.listaimg{
+    display: flex;
+
+}
+
+
+
+/*presnetacion*/
+.sobregeinz {
+    margin: 1em;
+}
+.sobregeinz h1{
+    padding-top: 3em;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.sobregeinz p{
+    text-align: center;
+    margin: 2em;
+  
+}
+
+.sobregeinz img{
+    padding-top: 1em;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    padding-bottom: 3em;
+}
+
+#menu-container {
+    position: relative;
+  }
+  
+  #menu-dots {
+    list-style-type: none;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  #menu-dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  #menu-image {
+    max-width:350px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+
+  
+/*Productos*/
+.productos{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding-bottom: 3em;
+    position: relative;
+    overflow: hidden;
+   
+}
+.productopadre{
+    padding: 0em 3em;
+}
+.productos h1{
+    color: black;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 1em 0em 0em 0.6em;
+
+}
+.contanedor_productos ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.producto_lista{
+    padding: 2em 0em;
+    
+}
+ul {
+    list-style: none;
+}
+#product-list {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+.producto{
+   
+    padding: 1em 1em;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.general_containerjs{
+    padding: 1em 1em;
+}
+.contanedor_productos button{
+    display: flex;
+    justify-content: right;
+    float: right;
+    padding: 0em 2em;
+   
+}.botonjs{
+    padding-bottom: 2em;
+}
+.producto h3{
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2em;
+}
+.producto p{
+    color: black;
+    font-size: 0.9em;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    padding-bottom: 1em;
+ 
+}
+.producto_novedades{
+    padding: 2em 0em;
+}
+.producto button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1em 2em;
+    font-size: 0.9em;
+    
+}
+.producto-imagen {
+    width: 200px;
+    height: auto;
+   
+}
+.producto-titulo {
+    color: black;
+    font-size: 1em;
+   
+}
+.productos-boton{
+    padding: 0em 1em;
+}
+/*zoom para img de producto*/
+.zoom_img {
+    overflow: hidden;
+  }
+  
+  .zoom_img img {
+    transition: transform 0.3s;
+  }
+  
+  .zoom_img:hover img {
+    transform: scale(1.2);
+  }
+/*circulo para boton producto*/
+.cirlulo-boton{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+.botonmoverderecha{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #9FA4AB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botonmoverderecha:hover{
+    background-color: #757575;
+   
+}
+.botonmoverderecha span{
+    color: black;
+    font-size: 15px;
+}
+/*Novedades*/
+.padre-novedades{
+    padding: 0em 3em;
+}
+.novedade{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding-bottom: 3em;
+    position: relative;
+    overflow: hidden;
+    
+}
+.producto_tendecias{
+    padding: 2em 0em;
+}
+.novedade h1{
+    color: black;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 1em 0em 0em 0.6em;
+}
+.contanedor_novedades ul{
+    display: flex;
+    justify-content: center;
+    position: relative;
+   
+}
+.novedades-generaljs{
+    padding: 1em 1em;
+}
+.novedadesconteiner{
+    padding: 2em 1em;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.novedades-imagen{
+    width: 300px;
+    height: auto;
+}
+#productolistanv{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.novedadesconteiner p{
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.9em;
+    padding-bottom: 1em;
+}
+.novedadesconteiner h3{
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2em;
+
+}
+.novedadesconteiner button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1em 2em;
+    font-size: 0.9em;
+}
+/*boton novedades*/
+.botonjsnovedades{
+    display: flex;
+    justify-content: right;
+    padding: 0em 1em;
+    
+}
+.circulobotondescueto{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+.botonmoverderecha-novedades{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #9FA4AB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bntsliderleftnovedades{
+   background-color: white;
+}
+
+
+
+/*descuento*/
+.padre-descuento{
+    padding: 0em 3em;
+}
+.descuento{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding-bottom: 3em;
+    position: relative;
+    overflow: hidden;
+}
+.descuento h1{
+    color: black;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 1em 0em 0em 0.6em;
+}
+.contanedor_descuento ul{
+    display: flex;
+    justify-content: center;
+  
+}
+.descuentos{
+    padding: 2em 1em;
+}
+.descuentos h3{
+    text-align: center;
+}
+.descuento button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1em;
+}
+.descuento p{
+    text-align: center;
+
+}
+.descuentos_js{
+    padding: 1em 1em;
+}
+.descuento-container{
+    padding: 2em 1em;
+    border-radius: 10px;
+    border: 2px solid black;
+
+}
+.descuento-container p{
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.9em;
+    padding-bottom: 1em;
+}
+.descuento-container h3{
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2em;
+
+}
+.descuento-container button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1em 2em;
+    font-size: 0.9em;
+}
+#lista_descuentos{   
+    display: flex;
+    transition: transform 0.5s ease;
+}
+/*boton descuento*/
+.botondescuentomover{
+  float: right;  
+}
+.botondecuentomover{
+    padding: 2em 1em 4em 0em;
+}
+
+.circulobotondescueto{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #9FA4AB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*tendecias*/
+.padre-tendecias{
+    padding: 0em 3em;
+}
+.tendecias{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.tendecia_js{
+    padding: 1em 1em;
+ 
+}
+.tendecias-container{
+    padding: 2em 1em;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.tendecias-container p{
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.9em;
+    padding-bottom: 1em;
+}
+.tendecias-container h3{
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2em;
+}
+.tendecias-container button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1em 2em;
+    font-size: 0.9em;
+}
+
+.tendecias h1{
+    color: black;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 1em 0em 0em 0.6em;
+}
+.contanedor_tendecias ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3em;
+}
+.tendecias h3{
+    text-align: center;
+}
+.tendecias p{
+    text-align: center;
+}
+.tendecias button{
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+#listadetendecias{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+/*circulo tendencias*/
+
+.circulotendecias{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #9FA4AB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botontendeciasmover{
+    float: right;
+    padding: 0em 1em;
+ 
+}
+.botontendeciaspopsition{
+    padding: 1em 0em;
+}
+/*linea*/
+.linea{
+    background-color: black;
+    height: 3px;
+    max-width: 8em;
+    margin: 0em 1em;
+    border-radius: 10px;
+}
+
+.video-logo{
+    margin: 1em 1em;
+    display: flex;
+    justify-content: center;
+   
+}
+
+/*publicacion*/
+.publicacion{
+    background-color: #F1F0EC;
+    height: 400px;
+    margin: 2em;
+}
+.publicacion h1{
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    padding-top: 8em;
+    font-size: 1.2em;
+    padding-bottom: 2em;
+}
+.publicacion button{
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/*video*/
+.video{
+    position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Proporción de aspecto 16:9 (9 dividido por 16 multiplicado por 100) */
+   
+}
+.video video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*crear cuenta*/
+.crear_cuenta{ 
+    margin: 3em;
+}
+.crear_cuenta p{
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 2em;
+   
+
+}
+.botones a{
+    padding: 0em 1em;
+}
+.botones button{
+    padding: 1em;
+   font-size: 0.7em;
+   font-family: 'Bebas Neue', sans-serif;
+   border-radius: 40px;
+}
+
+/*usuarios registrados*/
+.fondo-registrado{
+    background-color: black;
+    height: 300px;
+
+}
+.paalbras{
+    color: white;
+    text-align: center;
+    padding-top: 4em;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.flex{
+    margin: 1em 2em;
+}
+#progress2{
+    color: white;
+    text-align: center;
+    padding-top: 1em;
+}
+#progress2 span{
+    font-size: 4em;
+    font-family: 'Bebas Neue', sans-serif;
+    color: wheat;
+}
+#progress2 h2{
+    font-family: 'Bebas Neue', sans-serif;
+}
+/*redes*/
+.redes{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.redes img{
+    max-width: 50px;
+    padding-top: 0.6em;
+}
+.lenea-redes{
+
+    background-color: black;
+    height: 3px;
+    width: 187px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 20px;
+    
+}
+.espacionlinea{
+    padding-top: 3em;
+}
+.generalineabaja{
+    padding-bottom: 3em;
+}
+/*footer*/
+.fondo{
+    background-color: #111111;
+}
+.fondo a{
+    text-decoration: none;
+}
+.fondo p{
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.7em;
+    padding: 1em 2em;
+    width: 183px;
+}
+.imgredes{
+    display: flex;
+    justify-content: right; /* Alinear a la derecha */
+  
+}
+.imgredes img{
+    max-width: 40px;
+  
+
+}
+@media screen and (min-width: 700px) {
+
+    #usuarios_registrados2{
+        display: block;
+    }
+    .usuariosregistrados{
+        display: none;
+    }
+    #slogan2mediaquri{
+        display: block;
+    }
+    /*Slogan*/
+    #colorfondo-scolgan{
+        display: none;
+    }
+    /*slogan 2 */
+    .fondoslogan2{
+        background-image: url(/img/cuarto-cuadros-modernos.jpg);
+        background-color: rgba(0, 0, 0, 0.5); /* Un color negro semitransparente */
+        background-blend-mode: multiply; /* Mezcla la imagen y el color de fondo */ 
+        background-size: cover;
+        background-position: center;
+        height: 540px;    
+        max-width: 100%;
+    }
+    .h1fondoslogan h1{
+        padding-top: 5em;
+        text-align: center;
+        color: white;
+        font-family: 'IBM Plex Sans Thai', sans-serif;
+        font-size: 2em;
+        
+    }
+    .fondoslogan2 p{
+        padding-bottom: 7em;
+        text-align: center;
+        color: white;
+        font-family: 'IBM Plex Sans Thai', sans-serif;
+    }
+    .fondoslogan2 button{
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 1em 2em;
+        background-color: transparent;
+        font-size: 0.7em;
+        border: 1px  solid white ;
+        border-radius: 7px;
+    }
+
+    .bnejaminlopez{
+        display: flex;
+        justify-content: right;
+        padding-top: 10em;
+        padding-right: 5em;
+        font-size: 0.5em;
+        color: white;
+        font-family: 'IBM Plex Sans Thai', sans-serif;
+    }
+
+    
+
+    .cabezero_2{
+        display: block;
+       
+    }
+    .seccion{
+        display: none;
+    }
+    .general_foto_links img{
+        max-width: 100px;
+        padding-left: 2em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .links{
+        display: flex;
+        float: right;
+        justify-content: right;
+        padding-top: 3em;
+        padding-right: 1em;
+    }
+    .links a{
+        text-decoration: none;
+
+    }
+    .links p{
+        color: black;
+        font-family: 'Bebas Neue', sans-serif;
+        padding: 0em 1em;
+    }
+    .links p:hover{
+        color: #9FA4AB;
+    }
+
+    .slogan button{
+        padding: 1em 1em;
+        font-size: 1em;
+        font-family: 'Oswald', sans-serif;
+    }
+  
+    .sobregeinz{
+    display: flex; 
+    justify-content: center;
+    padding: 3em 3em;
+    width: auto;
+    margin: 0 auto;
+    }
+  .texto_geinz{
+    padding: 0em 2em 0em 0em ;
+    }
+  .texto_geinz h1{
+    text-align: left;
+    width: 229px;
+    padding-bottom: 1em;
+   
+    
+    }
+  .texto_geinz p{
+    color: #9FA4AB;
+    text-align: left;
+    max-width: 330px;
+    margin: 0;  
+    font-family: 'Bebas Neue', sans-serif;
+    }
+    .sobregeinz img{
+    margin: 0;
+    width: 400px;
+    }
+  
+    /*publicacion*/
+    .publicacion{
+        margin: 2em 3em;
+    }
+    .publicacion h1{
+        font-size: 2em;
+       padding-top: 4em;
+       font-family: 'Oswald', sans-serif;
+    }
+    .publicacion button{
+        padding: 1.5em 3em;
+    }
+
+
+    /*crear cuenta*/
+    .crear_cuenta p{
+        font-size: 1em;
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+    .botones button{
+        padding: 1.5em 3em;
+    }
+
+    /*usuarios registrados 2 */
+   .flex{
+    display: flex;
+    justify-content: center;
+   }
+    .fondo-registrado{
+        background-color: black;
+        height: 400px;
+        width: 100%;
+    }
+    .paalbras{
+       padding-top: 6em;
+       padding-right: 10em;
+
+     
+
+    }
+    .paalbras h1{
+        color: white;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 2em;
+    }
+    .paalbras p{
+        padding-top: 1em;
+        color: white;
+        font-family: 'Bebas Neue', sans-serif;
+        width: 226px;
+        
+    }
+    #progress2 h2{
+        color: white;
+        font-family: 'Bebas Neue', sans-serif;
+        height: 20px;
+       
+    }
+   
+    #currentNumber2{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        color: wheat;
+        font-size: 2em;
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    #progress2 {
+        display:block ;
+        padding-top: 11em;
+    }
+    
+}
+ 
+
+@media screen and (min-width: 1500px) {
+
+    .fondoslogan2{
+        background-image: url(/img/cuarto-cuadros-modernos.jpg);
+        background-color: rgba(0, 0, 0, 0.5); /* Un color negro semitransparente */
+        background-blend-mode: multiply; /* Mezcla la imagen y el color de fondo */ 
+        background-size: cover;
+        background-position: center;
+        height: 800px;    
+        max-width: 100%;
+    }
+.flex{
+    padding-top: 3em;
+
+}
+    .paalbras h1{
+        font-size: 4em;
+    }
+    .paalbras{
+        padding-right: 30em;
+        padding-top: 13em;
+    }
+    .paalbras p{
+        font-size: 2em;
+        width: 500px;
+    }
+    .fondo-registrado{
+        height: 700px;
+    }
+    #progress2 span {
+        font-size: 10em;
+        font-family: 'Bebas Neue', sans-serif;
+        color: wheat;
+    }
+    #progress2 h2 {
+        font-size: 2em;
+    }
+
+
+
+    .publicacion {
+        margin: 2em 9em;
+    }
+    .publicacion h1{
+        padding-top: 3em;
+        font-size: 3em;
+    }
+    .publicacion{
+        height: 541px;
+    }
+
+
+    .crear_cuenta p {
+        font-size: 1em;
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+
+    .redes img{
+        max-width: 45px;
+        padding: 0em 0.5em;
+    }
+    .video {
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Agrega esta línea para centrar verticalmente */
+        margin: 0 auto;
+        height: 100vh; /* Establece la altura total del contenedor */
+      }
+      
+      .video video {
+        width: 50%;
+        height: auto; /* Cambia height a auto para mantener la proporción del video */
+        object-fit: cover;
+      }
+}
